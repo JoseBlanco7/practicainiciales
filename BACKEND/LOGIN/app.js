@@ -42,6 +42,16 @@ app.get('/login', (req, res)=>{
 app.get('/register', (req, res)=>{
     res.render('register');
 })  
+app.get('/coments', (req, res)=>{
+    res.render('coments', {var1:'variable'});
+    /*connection.query('SELECT * FROM coments', (error, results) =>{
+        if (error){
+            throw error;    
+        } else {
+            res.send(results)
+        }
+    });*/
+})
 
 //10. para registrar
 
