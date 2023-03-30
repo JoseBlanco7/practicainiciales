@@ -2,6 +2,8 @@
 const express = require('express');
 const app = express();
 
+const router = express.Router();
+
 //2. Setear urlencodede para capturar los datos del formulario
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
@@ -42,15 +44,19 @@ app.get('/login', (req, res)=>{
 app.get('/register', (req, res)=>{
     res.render('register');
 })  
-app.get('/coments', (req, res)=>{
-    res.render('coments', {var1:'variable'});
-    /*connection.query('SELECT * FROM coments', (error, results) =>{
+app.get('/coment', (req, res)=>{
+    connection.query('SELECT * FROM coments', (error, results) =>{
         if (error){
             throw error;    
         } else {
-            res.send(results)
+            res.render('coments', {results:results});
         }
-    });*/
+    });
+})
+
+//crear publicaciones
+app.get('/create', (req, res) =>{
+    res.render('create');
 })
 
 //10. para registrar

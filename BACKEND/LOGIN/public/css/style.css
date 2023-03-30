@@ -171,3 +171,17 @@ color: #fff;
         
         text-decoration: none;
     }
+
+    .a-Publicaciones{
+        width: 100%;
+        padding: 15px;
+        background-color: #8a046f;
+        border: 5;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: large;
+        color: #fff;
+        
+        text-decoration: none;
+    }
