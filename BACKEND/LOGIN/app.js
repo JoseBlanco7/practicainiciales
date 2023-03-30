@@ -248,6 +248,7 @@ app.get('/perfilees',(req, res)=>{
 //const cr = require('./controllers/cr');
 //app.post('/save', cr.save);
 
+
 //crear publicaciones
 app.get('/create', (req, res) =>{
     res.render('create');
