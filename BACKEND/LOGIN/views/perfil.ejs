@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREAR PERFIL</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+<body>
+    <div class="register-form"> 
+        <h1>CREAR PERFIL</h1>
+        <form action="/perfil" method="POST">
+
+            <label for ="Nombre">NOMBRE</label>
+            <input type="text" name="Nombre"required>
+            
+            <label for ="Edad">EDAD</label>
+            <input type="text" name="Edad"required>
+
+            <label for ="CursoAP">CURSOS APROBADOS</label>
+            <input type="text" name="CursoAP"required>
+
+            <label for = "rol">ROL </label>
+            <select name="rol" id="rol" class="select-css" >
+                <option value="admin" selected>ADMIN</option>
+                <option value="data entry">DATAENTRY</option>
+            </select>  
+
+            <label for ="Carrera">CARRERA</label>
+            <input type="text" name="Carrera"required>
+
+            <label for ="Estado">ESTADO</label>
+            <input type="text" name="Estado"required>
+
+            <label for ="pass">CODIGO PERSONAL</label>
+            <input type="password" name="pass"required>>
+
+            <div styl="display: inline;">
+                <a href="/inicio" class="btn-cancel">Cancel</a><input type="submit" class ="btn-save" value = "Save">
+
+            </div>
+
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <% if(typeof alert != "undefined") { %>
+        <script>
+            swal.fire({
+                title: "<%= alertTitle %>",
+                text: "<%=  alertMessage %>",
+                icon: "<%=  alertIcon%>",
+                showConfirmButton:<%= showConfirmButton  %> ,
+                timer:<%= timer %>
+            }).then(()=>{
+                window.location="/inicio<%= ruta %>"
+            })
+        </script>
+        <% } %>
+</body> 
+</html>  
