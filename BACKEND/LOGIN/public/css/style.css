@@ -1,0 +1,173 @@
+body{
+    background-color: #16dc4e;
+    font-family: roboto;
+    margin: auto;
+    text-align: center;
+}
+.login-form, .contenedor{
+    width: 300px;
+    margin: auto;
+}
+.login-form h2 {
+    text-align: center;
+    color:rgb(114, 14, 14);
+    font-size: 100px;
+    padding: 70px 0 10px 0;
+}
+
+
+.login-form input[type="password"],
+.login-form input[type="text"]{
+    width: 100%;
+    padding: 15px;
+    border: 5px solid #18324c;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+/*Estilo de login*/
+.btn-login{
+width: 100%;
+padding: 15px;
+background-color: #8a046f;
+border: 5;
+box-sizing: border-box;
+cursor: pointer;
+font-weight: bold;
+font-size: large;
+color: #fff;
+}
+
+.btn-register{
+    width: 100%;
+    padding: 15px;
+    background-color: #02321f;
+    border: 100;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    color: #fff;
+    margin-top: 20px;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    }
+
+    /*Para el registro*/
+    .register-form, .contenedor{
+        width: 300px;
+        margin: auto;
+    }
+
+    
+    
+    .register-form input[type="password"],
+    .register-form input[type="text"]{
+        width: 100%;
+        padding: 15px;
+        border: 5px solid #18324c;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+    /*Estilo de login*/
+    .btn-cancel{
+        width: 100%;
+        padding: 15px;
+        background-color: #8a046f;
+        border: 5;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: large;
+        color: #fff;
+        margin-top: 20px;
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button;
+        text-decoration: none;
+        }
+
+    .btn-save{
+        width: 100%;
+        padding: 15px;
+        background-color: #013b24;
+        border: 100;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: large;
+        color: #fff;
+        margin-top: 20px;
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button;
+        text-decoration: none;
+        }
+
+    .btn-irlogin{
+        width: 100%;
+        padding: 15px;
+        background-color: #8a046f;
+        border: 5;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: large;
+        color: #fff;
+        
+        text-decoration: none;
+        }
+
+    .select-css{
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.3;
+        padding: .4em 1.4em .3em .8em;
+        width: 400px;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin:0;
+        background-color: #fff;
+    }
+    .a-logout{
+        width: 100%;
+        padding: 15px;
+        background-color: #8a046f;
+        border: 10;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: large;
+        color: #fff;
+        
+        text-decoration: none;
+    }
+    .a-login{
+        width: 100%;
+        padding: 15px;
+        background-color: #8a046f;
+        border: 5;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: large;
+        color: #fff;
+        
+        text-decoration: none;
+    }
+
+    .a-perfiles{
+        width: 100%;
+        padding: 15px;
+        background-color: #8a046f;
+        border: 5;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: large;
+        color: #fff;
+        
+        text-decoration: none;
+    }

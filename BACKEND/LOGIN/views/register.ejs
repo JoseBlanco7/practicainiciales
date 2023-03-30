@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+<body>
+    <div class="register-form">
+        <h1>REGISTRO</h1>
+        <form action="/register" method="POST">
+
+            <label for ="user">REGISTRO ACADEMICO</label>
+            <input type="text" name="user"required>
+            
+            <label for ="name">NOMBRE</label>
+            <input type="text" name="name"required>
+
+            <label for ="apellido">APELLIDO</label>
+            <input type="text" name="apellido"required>
+
+            <label for = "rol">ROL </label>
+            <select name="rol" id="rol" class="select-css" >
+                <option value="admin" selected>ADMIN</option>
+                <option value="data entry">DATAENTRY</option>
+            </select>  
+
+            <label for ="correo">CORREO</label>
+            <input type="text" name="correo"required>
+
+            <label for ="pass">CONTRASEÑA</label>
+            <input type="password" name="pass"required>
+
+            <div styl="display: inline;">
+                <a href="/inicio" class="btn-cancel">Cancel</a><input type="submit" class ="btn-save" value = "Save">
+
+            </div>
+
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <% if(typeof alert != "undefined") { %>
+        <script>
+            swal.fire({
+                title: "<%= alertTitle %>",
+                text: "<%=  alertMessage %>",
+                icon: "<%=  alertIcon%>",
+                showConfirmButton:<%= showConfirmButton  %> ,
+                timer:<%= timer %>
+            }).then(()=>{
+                window.location="/login<%= ruta %>"
+            })
+        </script>
+        <% } %>
+</body>
+</html>

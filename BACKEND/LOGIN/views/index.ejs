@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+<body>
+    <h1>PAGINA DE INICIO</h1>
+    <% if (login) { %>
+        <h1>EL USUARIO CONECTADO ES: <strong><%= name %></strong> </h1>
+        <a href="logout" class ="a-logout"> DESCONECTAR</a>
+        <a href="perfiles" class ="a-perfiles"> VER PERFILES</a>
+     <% } else { %>
+        <h1><strong><%= name %></strong></h1>
+        <a href="login" class="a-login">IR A LOGIN</a>
+     <% } %>
+
+
+
+
+</body>
+</html>
