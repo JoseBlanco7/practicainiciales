@@ -243,8 +243,25 @@ app.get('/perfilees',(req, res)=>{
         });
     } 
 })   
- 
 
+//guardar publicaciones
+//const cr = require('./controllers/cr');
+//app.post('/save', cr.save);
+
+//crear publicaciones
+app.get('/create', (req, res) =>{
+    res.render('create');
+})
+
+app.get('/coment', (req, res)=>{
+    connection.query('SELECT * FROM coments', (error, results) =>{
+        if (error){
+            throw error;    
+        } else {
+            res.render('coments', {results:results});
+        }
+    });
+})
 app.listen(3000, (req, res)=>{
     console.log("listening on http://localhost:3000/inicio")
 })   
