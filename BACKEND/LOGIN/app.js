@@ -59,6 +59,10 @@ app.get('/create', (req, res) =>{
     res.render('create');
 })
 
+//guardar publicaciones
+//const cr = require('./controllers/cr');
+//app.post('/save', cr.save);
+
 //10. para registrar
 
 app.post("/register", async (req, res)=>{
